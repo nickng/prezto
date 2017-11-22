@@ -10,4 +10,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+#
+# Debian packaging.
+#
+export DEBMAIL="nickng@nickng.io"
+export DEBFULLNAME="Nicholas Ng"
+
+#
+# Travis
+#
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+#
+# Homeshick
+#
+[ -f $HOME/.homesick/repos/homeshick/homeshick.sh ]
